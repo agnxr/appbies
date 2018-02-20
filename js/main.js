@@ -1,12 +1,15 @@
+// == preloader ==
+$(window).load(function() {
+  $("#bg").delay(500).fadeOut("slow"); 
+})
+
+
 window.onload = function() {
 
 //play video
-    var video = document.getElementById("video");
+var video = document.getElementById("video");
 
-    var playButton = document.getElementById("play");
-
-
-
+var playButton = document.getElementById("play");
 
 playButton.addEventListener("click", function() {
     if (video.paused == true ) {
@@ -18,13 +21,12 @@ playButton.addEventListener("click", function() {
 
 }
 
-
 // === slider 
 prevArrow: $('.prev');
 nextArrow: $('.next');
 
 $(document).ready(function(){
-  //...with products:
+
     $('.slider').slick({
   
       infinite: true,
@@ -50,4 +52,20 @@ $(document).ready(function(){
         }
       ]
     });
+
+    //=== smooth scroll ===
+
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+
+
   });

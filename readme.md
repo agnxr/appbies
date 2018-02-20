@@ -6,7 +6,7 @@ Technologies used:
 
 * HTML5,
 * CSS3 (Sass),
-* JavaScript.
+* jQuery, particles.js, Slick Slider
 
 
 
