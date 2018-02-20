@@ -397,7 +397,7 @@ h2 {
 #team {
     background-color: #007ecf;
     background-image: url("../images/video_bg.png");
-    margin-top: -2px; 
+    margin-top: -1px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,7 +418,6 @@ h2 {
 }
 
 .videowrap {
-    border: 1px solid red;
     width: 70vw;
     height: 60vh;
     position: relative;
@@ -437,7 +436,6 @@ h2 {
     color: white;
     font-size: 70px;
     cursor: pointer;
-    
 }
 
 #play:hover {
@@ -448,6 +446,14 @@ h2 {
 
 #pricing{
     background-color: white;
+    margin-top: -1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
     clip-path: polygon(
         0 0,
         100% 0,
@@ -456,22 +462,242 @@ h2 {
       );
 }
 
+#pricing h2 {
+    color: #444444;
+}
 
+.update_and_news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 70vw;
+    margin-bottom: 70px;
+}
+
+.update {
+    //border: 1px solid red;
+    display: inline-block;
+    text-align: center;
+    background-color: #a5c63b;
+    border-radius: 50%;
+    padding: 30px;
+    font-weight: 300;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.update img, .update p {
+    margin: 5px;
+}
+
+.update:nth-child(2){
+    background-color: #009ddc;
+}
+
+.update:last-child{
+    background-color: #f8682c;
+}
+.update:hover {
+    background-color: #444444;
+}
+
+.newsletter {
+    margin-right: 50px;
+    text-align: left;
+}
+.newsletter p {
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+#email {
+    width: 20vw;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #c4c4c4;
+    border-color: transparent;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 15px;
+}
+
+#sbm {
+    background-color: transparent;
+    border: 2px solid #444444;
+    color: #444444;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+#sbm:hover {
+    background-color: #f8682c;
+}
 //contact 
 
 #contact {
     background-color: #007ecf;
-    background-image: url("../images/comp.png");
+    background-image: url("../images/blyski.png");
+    background-size: cover;
+    margin-top:-1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 calc(100% - 5vw)
       );
+}
+
+#contact>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+ //   margin-right: 100px;
+}
+#contact input, textarea {
+    width: 20vw;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    border-color: transparent;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 20px;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    width: 380px;
+    overflow: hidden;
+}
+
+#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    opacity: 0.6;
+    
+  }
+  #contact ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    opacity: 0.6;
+  }
+
+
+#contact #form_sbm {
+    padding: 15px;
+    width: 150px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#contact form, .contact_info, .chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+
+}
+
+.contact_info div {
+    margin: 30px;
+}
+
+.contact_info img {
+    margin-bottom: 20px;
+}
+
+.contact_info p {
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.chat h4 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.chat img {
+    margin-bottom: 40px;
+}
+
+.chat p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.chat a {
+    background-color: #05d10f;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.chat button {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.chat button:hover, #contact #form_sbm:hover {
+    background-color: #05d10f;
 }
 
 //footer
 
 footer {
     background-color: white;
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+footer img {
+    margin-bottom: 70px;
+}
+
+footer a {
+    margin: 50px;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 18px;
 }

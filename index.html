@@ -236,58 +236,100 @@
     </div>
 
     <section id="pricing">
-        <div>
-            <img src="images/mobile_vertical.png">
+        <h2>Download & Updates</h2>
+
+        <div class="update_and_news">
+            <!-- links to download -->
+            <div>
+                <a class="update" href="#">
+                    <img src="images/android.png" alt="android"/>
+                    <p>2118</p>
+                    <p>Downloads</p>
+                </a>
+
+                <a class="update" href="#">
+                    <img src="images/apple.png" alt="apple"/>
+                    <p>2118</p>
+                    <p>Downloads</p>
+                </a>
+
+                <a class="update" href="#">
+                    <img src="images/windows.png" alt="windows"/>
+                    <p>2118</p>
+                    <p>Downloads</p>
+                </a>
+            </div>
+            <!-- /links -->
+
+            <div class="newsletter">
+                <p>We promise, your mail never will be spam.</p>
+                <form>
+                    <input id="email" placeholder="Enter Email Address" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+                    <input id="sbm" type="submit" name="submit" value="SUBMIT"/>
+                </form>       
+            </div>
         </div>
-
+        <img src="images/mobile_vertical.png">
     </section>
 
-    <div class="white_triangle">
-    <section id="contact">
-            <div class="hello">
-                    <h5>SAY HELLO!</h5>
-                    <form name='registration'>
-                        <label for="username">Name</label>
-                        <input id="uname" type="text" name="username" pattern="[a-zA-Z\s]+" title="Name must have alphabet characters only e.g. John"/>
-                        <br>
-        
-                        <div id="name_message">
-                            <p>e.g. John Kowalsky</p>
-                        </div>
-        
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
-                        <br>
-        
-                        <div id="email_message">
-                            <p>e.g. example@example.com</p>
-                        </div>
-        
-                        <label for="phone">Phone</label>
-                        <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="Phone should contain numbers eg. 123-345-456"/>
-                        <br>
-        
-                        <div id="phone_message">
-                            <p>e.g. 123-123-123</p>
-                        </div>
-        
-                        <label for="desc">Message</label>
-                        <br>
-        
-                        <div id="text_message">
-                            <p>Do you have any questions?</p>
-                        </div>
-        
-                        <textarea id="txt" name="desc" id="desc"></textarea>
-                        <input id="but_sbm" type="submit" name="submit" value="SEND MESSAGE"/>
-                    </form>
+    <div class="triangle">
+        <section id="contact">
+
+            <h2>App Support</h2>
+
+            <div>
+                <form>
+                    <input placeholder="Full Name" type="text" name="username" pattern="[a-zA-Z\s]+" title="Name must have alphabet characters only e.g. John"/>
+                            
+                    <input placeholder="Email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+    
+                    <input placeholder="Phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="Phone should contain numbers eg. 123-345-456"/>
+    
+                    <textarea placeholder="Message" name="desc"></textarea>
+                    <input id="form_sbm" type="submit" name="submit" value="SUBMIT"/>
+                </form>
+    
+                <div class="contact_info">
+                    <div>
+                        <img src="images/call.png">
+                        <p>+444 1234 567890</p>
+                    </div>
+                    <div>
+                        <img src="images/mail.png">
+                        <p>info@appbies.com</p>
+                        <p>support@appbies.com</p>
+                    </div>
+                    <div>
+                        <img src="images/adres.png">
+                        <p>293S Alameda st</p>
+                        <p>Main Road, London</p>
+                    </div>
                 </div>
-    </section>
-</div>
+
+               
+                <div class="chat">
+                    <h4>Online Chat</h4>
+                    <img src="images/czat.png">
+                    <p>John Thomas</p>
+                    <a href="#">ONLINE</a>
+                    <button>START CHAT</button>
+                </div>
+                
+            </div>
+
+        </section>
+    </div>
 
     <footer>
-        <p>Designed By PSDFreebies.com</p>
-        <p>COPYRIGHT 2017</p>
+        <img src="images/bottom_logo.png" alt="logo">
+        <div>
+            <a href="https://www.facebook.com" alt="Facebook" target="_blank"><img src="images/fb.png"/></a>
+            <a href="https://twitter.com" alt="Twitter" target="_blank"><img src="images/twitter.png"/></a>
+            <a href="https://linkedin.com/" alt="LinkedIn" target="_blank"><img src="images/linkedin.png"/></a>
+            <a href="https://youtube.com" alt="YouTube" target="_blank"><img src="images/yt.png"/></a>
+            <a href="https://skype.com" alt="Skype" target="_blank"><img src="images/skp.png"/></a>
+        </div>
+        <p>Copyrights &#9400; PSDFreebies.com | All rights reserved.</p>
     </footer>
 
 
