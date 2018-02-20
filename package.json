@@ -19,5 +19,8 @@
     "gulp-util": "^3.0.8",
     "i": "^0.3.6",
     "sass": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
