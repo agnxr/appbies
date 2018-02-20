@@ -20,9 +20,9 @@ header {
       );
 }
 
-.white_triangle {
+.triangle {
     background-color: white;
-    bottom: -40px;
+    bottom: -1px;
 }
 
 a {
@@ -194,7 +194,13 @@ h2 {
     background-color: white;
     color: #444444;
     display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: -1px; 
+    padding-top: 10px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
     
     clip-path: polygon(
         0 0,
@@ -204,37 +210,61 @@ h2 {
       );
 }
 
+#features h2 {
+    font-weight: normal;
+}
 
 #features+div{
-    display: flex;
-    
+    display: flex; 
 }
 
 #features>div {
- //   border: 1px solid red;
     display: flex;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 40%;
 }
 
 .all_features {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
+
+.feature {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
 #features>div:last-child {
-    background-color: red;
-    width: 50%;
+    width: 40%;
 }
+
+
 .feature_circle {
     border: 1px solid #4ea5de;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 //==== about ===
