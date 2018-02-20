@@ -4,12 +4,25 @@ body {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     color: white;
+    background-color: #007ecf;
 }
 
 header {
     height: 100vh;
     background-image: url("../images/tlo.png");
     background-size: contain;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+.white_triangle {
+    background-color: white;
+    bottom: -40px;
 }
 
 a {
@@ -26,7 +39,6 @@ a {
     height: 20%;
     width: 80%;
     z-index: 999;
-    border: 1px solid white;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -35,13 +47,12 @@ a {
     width: 20%;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .desktop_menu {
-    border: 1px solid blue;
     width: 60%;
 }
+
 .navigation li {
     display: inline-block;
 }
@@ -69,14 +80,12 @@ nav a:hover {
 
 header .container {
     margin: 0 auto;
-    border: 1px solid red;
     width: 80%;
     display: flex;
     height: 80vh;
 }
 
 .container>div:first-child {
-    border: 1px solid blue;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -86,10 +95,9 @@ header .container {
 }
 
 .phones {
-    border: 1px solid green;
     width: 50%;
-    overflow: hidden;
-
+    height: 88vh;
+ //   overflow: hidden;
 }
 
 .phones img {
@@ -115,8 +123,183 @@ header p {
     border: 1px solid white;
     font-size: 16px;
     padding: 17px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
 }
 
 .download:hover {
     color: #73e128;
+}
+
+
+//2nd section
+
+.choose_platform {
+    background-color: #007ecf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   // margin-top: -5vw;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+    );
+
+}
+
+.choose_platform>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.choose_platform>div>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.download img {
+    margin-right: 20px;
+}
+
+.choose_platform .download {
+    font-size: 20px;
+    margin: 30px;
+}
+
+h2 {
+    font-size: 37px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.choose_platform p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+//===features
+
+#features {
+    background-color: white;
+    color: #444444;
+    display: flex;  
+    margin-top: -1px; 
+    
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+
+#features+div{
+    display: flex;
+    
+}
+
+#features>div {
+ //   border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.all_features {
+    display: flex;
+    flex-wrap: wrap;
+}
+#features>div:last-child {
+    background-color: red;
+    width: 50%;
+}
+.feature_circle {
+    border: 1px solid #4ea5de;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//==== about ===
+
+#about {
+    background-color: #4ea5de;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+//===screenshot
+
+#screenshot {
+    background-color: white;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+//team
+
+#team {
+    background-color: #007ecf;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+//pricing
+
+#pricing{
+    background-color: white;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+
+//contact 
+
+#contact {
+    background-color: #007ecf;
+    background-image: url("../images/comp.png");
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+//footer
+
+footer {
+    background-color: white;
 }
