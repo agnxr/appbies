@@ -12,3 +12,37 @@ playButton.addEventListener("click", function() {
     } 
   });
 }
+
+
+// === slider 
+prevArrow: $('.prev');
+nextArrow: $('.next');
+
+$(document).ready(function(){
+  //...with products:
+    $('.slider').slick({
+  
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 900,
+      arrows: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 780,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });

@@ -254,7 +254,6 @@ h2 {
     width: 40%;
 }
 
-
 .feature_circle {
     border: 1px solid #4ea5de;
     border-radius: 50%;
@@ -267,10 +266,18 @@ h2 {
     margin-top: 40px;
 }
 
-//==== about ===
+//==== about: Why choose AppBies ===
 
 #about {
-    background-color: #4ea5de;
+    background-color: #007ecf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background-image: url("../images/comp.png");
     clip-path: polygon(
         0 0,
         100% 0,
@@ -278,10 +285,60 @@ h2 {
         0 calc(100% - 5vw)
       );
 }
-//===screenshot
+
+#about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.left_section, .right_section {
+    width: 40%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.left_section div, .right_section div {
+    height: 33%;
+    width: 80%;
+    margin: 30px;
+    text-align: end;
+}
+
+.right_section div {
+    text-align: start;
+}
+.left_section h3, .right_section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.left_section p, .right_section p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+}
+//=== screenshot ===
 
 #screenshot {
     background-color: white;
+    margin-top: -1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 150px;
     clip-path: polygon(
         0 0,
         100% 0,
@@ -290,16 +347,101 @@ h2 {
       );
 }
 
-//team
+#screenshot h2 {
+    color: #444444;
+    font-size: 40px;
+}
+
+.slider {
+    width: 50vw;
+    height: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.slider img {
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    width: 100px;
+}
+
+.prev, .next {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 60px;
+    border: 1px solid #007ecf;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: #007ecf;
+}
+.prev p, .next p {
+    text-align: center;
+    line-height: 50px;
+    color: #444444;
+    font-weight: bold;
+}
+
+.screen_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+//team - video
 
 #team {
     background-color: #007ecf;
+    background-image: url("../images/video_bg.png");
+    margin-top: -2px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 calc(100% - 5vw)
       );
+}
+
+#team h2 {
+    margin-bottom: 80px;
+}
+
+.videowrap {
+    border: 1px solid red;
+    width: 70vw;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#play {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 70px;
+    cursor: pointer;
+    
+}
+
+#play:hover {
+    color: #007ecf;
 }
 
 //pricing
