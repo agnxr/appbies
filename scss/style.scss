@@ -419,12 +419,14 @@ h2 {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 150px;
+    /*
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 calc(100% - 5vw)
       );
+      */
 }
 
 @-moz-document url-prefix() {
@@ -483,7 +485,7 @@ h2 {
 #team {
     background-color: #007ecf;
     background-image: url("../images/video_bg.png");
-    margin-top: -5px; 
+    margin-top: -6px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
