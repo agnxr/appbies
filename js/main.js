@@ -1,6 +1,6 @@
 // == preloader ==
 $(window).load(function() {
-  $("#bg").delay(500).fadeOut("slow"); 
+  $("#bg").delay(150).fadeOut("slow"); 
 })
 
 
