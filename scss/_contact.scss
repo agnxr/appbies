@@ -1,0 +1,172 @@
+//contact 
+
+#contact {
+    background-color: #007ecf;
+    background-image: url("../images/blyski.png");
+    background-size: cover;
+    margin-top:-2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+#contact>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+ //   margin-right: 100px;
+}
+#contact input, textarea {
+    width: 20vw;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    border-color: transparent;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 20px;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+
+textarea {
+    resize: none;
+    height: 150px;
+    width: 20vw;
+    overflow: hidden;
+}
+
+#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    opacity: 0.6;
+    
+  }
+  #contact ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    opacity: 0.6;
+  }
+
+
+#contact #form_sbm {
+    padding: 15px;
+    width: 150px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#contact form, .contact_info, .chat {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+
+}
+
+.contact_info div {
+    margin: 30px;
+}
+
+.contact_info img {
+    margin-bottom: 20px;
+}
+
+.contact_info p {
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.chat h4 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.chat img {
+    margin-bottom: 40px;
+}
+
+.chat p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.chat a {
+    background-color: #05d10f;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+
+    animation-name:width;
+    animation-duration:1s, 500ms;
+    animation-timing-function:ease-in-out, linear;
+    animation-delay:0s, 2s;
+    animation-iteration-count:infinite, infinite;
+    animation-direction:alternate, normal;
+    animation-fill-mode:backwards, forwards;
+}
+
+@keyframes width
+{
+  0% { width:65px; }
+  100% { width:90px; }
+}
+
+@-webkit-keyframes width
+{
+  0% { width:65px; }
+  100% { width:90px; }
+}
+
+.chat button {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.chat button:hover, #contact #form_sbm:hover {
+    background-color: #05d10f;
+}
+
+
+@media screen and (max-width:800px) {
+    #contact>div {
+        flex-direction: column;
+    }
+    #contact form, .contact_info, .chat {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    #contact input, textarea {
+        width: 100%;
+    }
+    
+}

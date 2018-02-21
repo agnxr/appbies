@@ -1,0 +1,95 @@
+//==== about: Why choose AppBies ===
+
+#about {
+    background-color: #007ecf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background-image: url("../images/comp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+#about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.left_section, .right_section {
+    width: 40%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.left_section div, .right_section div {
+    height: 33%;
+    width: 80%;
+    margin: 30px;
+    text-align: end;
+}
+
+.right_section div {
+    text-align: start;
+}
+.left_section h3, .right_section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.left_section p, .right_section p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+@media screen and (max-width:840px) {
+    #about img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #about .content {
+        flex-direction: column;
+    }
+    .left_section, .right_section {
+        width: 80%;
+
+    }
+
+    .left_section div, .right_section div {
+        text-align: left;
+        width: 100%;
+    }
+
+    @-moz-document url-prefix() {
+        .left_section, .right_section  { 
+            margin-bottom: -100px;
+         }
+         #about .content {
+             margin-top: -1px;
+         }
+    }
+
+}

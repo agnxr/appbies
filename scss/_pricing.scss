@@ -1,0 +1,114 @@
+//pricing
+
+#pricing{
+    background-color: white;
+    margin-top: -1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+#pricing h2 {
+    color: #444444;
+}
+
+.update_and_news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin-bottom: 70px;
+  //  border: 1px solid red;
+}
+
+.update {
+    //border: 1px solid red;
+    display: inline-block;
+    text-align: center;
+    background-color: #a5c63b;
+    border-radius: 50%;
+    padding: 30px;
+    font-weight: 300;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.update img, .update p {
+    margin: 5px;
+}
+
+.update:nth-child(2){
+    background-color: #009ddc;
+}
+
+.update:last-child{
+    background-color: #f8682c;
+}
+.update:hover {
+    background-color: #444444;
+}
+
+.newsletter {
+    margin-right: 50px;
+    text-align: left;
+}
+.newsletter p {
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+#email {
+    width: 20vw;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #c4c4c4;
+    border-color: transparent;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 15px;
+}
+
+#sbm {
+    background-color: transparent;
+    border: 2px solid #444444;
+    color: #444444;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+#sbm:hover {
+    background-color: #f8682c;
+}
+
+@media screen and (max-width:1170px) {
+    #sbm {
+        margin-top: 50px;
+    }
+    .update_and_news {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#pricing img:last-child {
+    max-width: 50vw;
+}

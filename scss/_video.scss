@@ -1,0 +1,55 @@
+//team - video
+
+#team {
+    background-color: #007ecf;
+    background-image: url("../images/video_bg.png");
+    margin-top: -6px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 180px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+#team h2 {
+    margin-bottom: 80px;
+}
+
+.videowrap {
+    width: 70vw;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#play {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+#play:hover {
+    color: #007ecf;
+}
+
+@-moz-document url-prefix() {
+    #play { 
+        display: none;
+     }
+}

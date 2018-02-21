@@ -1,0 +1,75 @@
+//=== screenshot ===
+
+#screenshot {
+    background-color: white;
+    margin-top: -1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 150px;
+    /*
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+      */
+}
+
+@-moz-document url-prefix() {
+    #screenshot  { 
+        padding-bottom: 250px;
+     }
+    .prev, .next {
+        margin-top: 200px;
+    }
+}
+
+#screenshot h2 {
+    color: #444444;
+    font-size: 40px;
+}
+
+.slider {
+    width: 50vw;
+    height: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.slider img {
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    width: 100px;
+}
+
+.prev, .next {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 60px;
+    border: 1px solid #007ecf;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: #007ecf;
+}
+.prev p, .next p {
+    text-align: center;
+    line-height: 50px;
+    color: #444444;
+    font-weight: bold;
+}
+
+.screen_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}

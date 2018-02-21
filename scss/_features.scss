@@ -1,0 +1,100 @@
+//=== features ===
+
+#features {
+    background-color: white;
+    color: #444444;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -1px; 
+    padding-top: 10px;
+    padding-bottom: 100px;
+    box-sizing: border-box;    
+    background-attachment: fixed;
+    
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+      );
+}
+
+#features h2 {
+    font-weight: normal;
+}
+
+#features+div{
+    display: flex; 
+}
+
+#features>div {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+.all_features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.feature {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+//phones
+#features>div:last-child {
+    max-width: 40%;
+}
+
+@media screen and (max-width:1100px) {
+
+    #features>div:last-child {
+        display: none;
+    }
+
+    .all_features {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .feature {
+        width: 80vw;
+    }
+}
+
+.feature_circle {
+    border: 1px solid #4ea5de;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.feature .screens {
+    max-width: 400px;
+}
