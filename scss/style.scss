@@ -125,7 +125,7 @@ header p {
     margin-bottom: 80px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     .phones {
         display: none;
     }
@@ -384,14 +384,28 @@ h2 {
 }
 
 @media screen and (max-width:600px) {
+    #about .content {
+        flex-direction: column;
+    }
+    .left_section, .right_section {
+        width: 80%;
+
+    }
+
     .left_section div, .right_section div {
         text-align: left;
         width: 100%;
     }
 
-    #about .content {
-        flex-direction: column;
+    @-moz-document url-prefix() {
+        .left_section, .right_section  { 
+            margin-bottom: -100px;
+         }
+         #about .content {
+             margin-top: -1px;
+         }
     }
+
 }
 //=== screenshot ===
 
@@ -411,6 +425,12 @@ h2 {
         100% 100%,
         0 calc(100% - 5vw)
       );
+}
+
+@-moz-document url-prefix() {
+    #screenshot  { 
+        padding-bottom: 250px;
+     }
 }
 
 #screenshot h2 {
@@ -663,13 +683,6 @@ h2 {
 }
 
 
-@media screen and (max-width:800px) {
-    #contact form, .contact_info, .chat {
-        width: 100vw;
-        margin-top: 80px;
-    }
-}
-
 #contact form {
     display: flex;
     flex-direction: column;
@@ -688,13 +701,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-//////////////////ttttt
-@media screen and (max-width:800px) {
-    #contact input {
-        width: 100vw;
-        margin-top: 80px;
-    }
-}
 
 textarea {
     resize: none;
@@ -723,6 +729,7 @@ textarea {
 
 #contact form, .contact_info, .chat {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -800,6 +807,23 @@ textarea {
 
 .chat button:hover, #contact #form_sbm:hover {
     background-color: #05d10f;
+}
+
+
+//////////////////ttttt
+@media screen and (max-width:800px) {
+    #contact>div {
+        flex-direction: column;
+    }
+    #contact form, .contact_info, .chat {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    #contact input, textarea {
+        width: 100%;
+    }
+    
 }
 
 //footer
