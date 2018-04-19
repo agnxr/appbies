@@ -3,7 +3,6 @@ $(window).load(function() {
   $("#bg").fadeOut("slow"); 
 })
 
-
 window.onload = function() {
 
 //play video
