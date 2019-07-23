@@ -1,6 +1,4 @@
-//team - video
-
-#team {
+.team {
     background-color: #007ecf;
     background-image: url("../images/video_bg.png");
     margin-top: -6px; 
@@ -17,10 +15,9 @@
         100% 100%,
         0 calc(100% - 5vw)
       );
-}
-
-#team h2 {
-    margin-bottom: 80px;
+    h2 {
+        margin-bottom: 80px;
+    }
 }
 
 .videowrap {
@@ -31,7 +28,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 #play {
@@ -42,10 +38,9 @@
     color: white;
     font-size: 70px;
     cursor: pointer;
-}
-
-#play:hover {
-    color: #007ecf;
+    &:hover {
+        color: #007ecf;
+    }
 }
 
 @-moz-document url-prefix() {

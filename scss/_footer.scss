@@ -1,6 +1,4 @@
-//footer
-
-footer {
+.footer {
     background-color: white;
     color: #444444;
     display: flex;
@@ -10,17 +8,14 @@ footer {
     text-align: center;
     padding-top: 90px;
     padding-bottom: 90px;
-}
-
-footer img {
-    margin-bottom: 70px;
-}
-
-footer a {
-    margin: 50px;
-}
-
-footer p {
-    margin-top: 30px;
-    font-size: 18px;
+    img {
+        margin-bottom: 70px;
+    }
+    a {
+        margin: 50px;
+    }
+    p {
+        margin-top: 30px;
+        font-size: 18px;
+    }
 }

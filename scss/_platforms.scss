@@ -1,17 +1,27 @@
-//2nd section
-
 .choose_platform {
     background-color: #007ecf;
     display: flex;
     justify-content: center;
     align-items: center;
-   // margin-top: -5vw;
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 calc(100% - 5vw)
     );
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 45px;
+    }
+    .download {
+        font-size: 20px;
+        margin: 30px;
+        img {
+            margin-right: 20px;
+        }
+    }
 
 }
 
@@ -23,6 +33,11 @@
     flex-direction: column;
     margin-top: 120px;
     margin-bottom: 200px;
+    h2 {
+        font-size: 37px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
 }
 
 .choose_platform>div>div {
@@ -30,23 +45,3 @@
     flex-wrap: wrap;
 }
 
-.download img {
-    margin-right: 20px;
-}
-
-.choose_platform .download {
-    font-size: 20px;
-    margin: 30px;
-}
-
-h2 {
-    font-size: 37px;
-    font-weight: 300;
-    margin-bottom: 40px;
-}
-
-.choose_platform p {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 45px;
-}

@@ -1,6 +1,4 @@
-//contact 
-
-#contact {
+.contact {
     background-color: #007ecf;
     background-image: url("../images/blyski.png");
     background-size: cover;
@@ -18,9 +16,13 @@
         100% 100%,
         0 calc(100% - 5vw)
       );
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-#contact>div {
+.contact>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +31,7 @@
     width: 80vw;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
- //   margin-right: 100px;
-}
-#contact input, textarea {
+.contact input, textarea {
     width: 20vw;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
@@ -47,7 +44,6 @@
     margin-bottom: 30px;
 }
 
-
 textarea {
     resize: none;
     height: 150px;
@@ -55,25 +51,23 @@ textarea {
     overflow: hidden;
 }
 
-#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.contact ::-webkit-input-placeholder {
     color: white;
     opacity: 0.6;
-    
-  }
-  #contact ::-moz-placeholder { /* Firefox 19+ */
+}
+.contact ::-moz-placeholder { 
     color: white;
     opacity: 0.6;
-  }
+}
 
-
-#contact #form_sbm {
+.contact #form_sbm {
     padding: 15px;
     width: 150px;
     border: 2px solid white;
     cursor: pointer;
 }
 
-#contact form, .contact_info, .chat {
+.contact form, .contact_info, .chat {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -84,49 +78,56 @@ textarea {
 
 }
 
-.contact_info div {
-    margin: 30px;
-}
+.contact_info {
+    div {
+        margin: 30px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    p {
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 16px;
+    } 
+} 
 
-.contact_info img {
-    margin-bottom: 20px;
-}
-
-.contact_info p {
-    line-height: 30px;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.chat h4 {
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-.chat img {
-    margin-bottom: 40px;
-}
-
-.chat p {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.chat a {
-    background-color: #05d10f;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-
-    animation-name:width;
-    animation-duration:1s, 500ms;
-    animation-timing-function:ease-in-out, linear;
-    animation-delay:0s, 2s;
-    animation-iteration-count:infinite, infinite;
-    animation-direction:alternate, normal;
-    animation-fill-mode:backwards, forwards;
+.chat {
+    h4 {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    img {
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    a {
+        background-color: #05d10f;
+        display: inline-block;
+        padding: 8px 30px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        animation-name:width;
+        animation-duration:1s, 500ms;
+        animation-timing-function:ease-in-out, linear;
+        animation-delay:0s, 2s;
+        animation-iteration-count:infinite, infinite;
+        animation-direction:alternate, normal;
+        animation-fill-mode:backwards, forwards;
+    }
+    button {
+        border: 2px solid white;
+        background-color: transparent;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 @keyframes width
@@ -141,32 +142,19 @@ textarea {
   100% { width:90px; }
 }
 
-.chat button {
-    border: 2px solid white;
-    background-color: transparent;
-    padding: 10px 30px;
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    color: white;
-    cursor: pointer;
-}
-
 .chat button:hover, #contact #form_sbm:hover {
     background-color: #05d10f;
 }
 
-
 @media screen and (max-width:800px) {
-    #contact>div {
+    .contact>div {
         flex-direction: column;
     }
-    #contact form, .contact_info, .chat {
+    .contact form, .contact_info, .chat {
         width: 100%;
         margin-bottom: 100px;
     }
-
-    #contact input, textarea {
+    .contact input, textarea {
         width: 100%;
-    }
-    
+    }  
 }
